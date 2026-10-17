@@ -17,7 +17,7 @@ RUN --mount=type=cache,target=/root/.cache/pip \
 # ============================================================
 # Stage 2: runtime
 # ============================================================
-FROM python:3.14-slim
+FROM python:3.14-slim AS runtime
 
 WORKDIR /app
 
